@@ -1,0 +1,333 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% The Legrand Orange Book
+% LaTeX Template
+% Version 2.1 (14/11/15)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Mathias Legrand (legrand.mathias@gmail.com) with modifications by:
+% Vel (vel@latextemplates.com)
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+% Compiling this template:
+% This template uses biber for its bibliography and makeindex for its index.
+% When you first open the template, compile it from the command line with the 
+% commands below to make sure your LaTeX distribution is configured correctly:
+%
+% 1) pdflatex main
+% 2) makeindex main.idx -s StyleInd.ist
+% 3) biber main
+% 4) pdflatex main x 2
+%
+% After this, when you wish to update the bibliography/index use the appropriate
+% command above and make sure to compile with pdflatex several times 
+% afterwards to propagate your changes to the document.
+%
+% This template also uses a number of packages which may need to be
+% updated to the newest versions for the template to compile. It is strongly
+% recommended you update your LaTeX distribution if you have any
+% compilation errors.
+%
+% Important note:
+% Chapter heading images should have a 2:1 width:height ratio,
+% e.g. 920px width and 460px height.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+%\documentclass[11pt,fleqn]{book} % Default font size and left-justified equations
+
+\documentclass[11pt,a4paper]{book} % Default font size and left-justified equations
+
+%----------------------------------------------------------------------------------------
+
+\input{structure} % Insert the commands.tex file which contains the majority of the structure behind the template
+
+\newcommand{\numpaperspt}{14 }
+\newcommand{\numpapersen}{14 }
+\newcommand{\Numpaperspt}{Quatorze }
+\newcommand{\Numpapersen}{Fourteen }
+%\usepackage{draftwatermark}
+%\SetWatermarkText{PRELIMINAR}
+%\SetWatermarkScale{.7}
+%\SetWatermarkColor[rgb]{red!60}
+
+\begin{document}
+
+%----------------------------------------------------------------------------------------
+%	TITLE PAGE
+%----------------------------------------------------------------------------------------
+
+\begingroup
+\thispagestyle{empty}
+\begin{tikzpicture}[remember picture,overlay]
+\coordinate [below=12cm] (midpoint) at (current page.north);
+\node at (current page.north west)
+{\begin{tikzpicture}[remember picture,overlay]
+\node[anchor=north west,inner sep=0pt] at (0,0) {\includegraphics{leafs_04}}; % Background image
+%\node[anchor=north west,inner sep=0pt] at (0,0) {\includegraphics[scale=.5,angle=-90,origin=c]{leafs_02}}; % Background image
+\draw[anchor=north] (midpoint) node [fill=ocre!30!white,fill opacity=0.6,text opacity=1,inner sep=1cm]{\Huge\centering\bfseries\sffamily\parbox[c][][t]{.9\paperwidth}{\centering SEMINÁRIOS PPG-EM / UERJ 2015\\[15pt] % Book title
+{\huge PPG-EM UERJ 2015 SEMINARS}\\[20pt] % Subtitle
+{\Large Programa de Pós-graduação em Engenharia Mecânica UERJ}
+}}; % Author name
+\end{tikzpicture}};
+\end{tikzpicture}
+%\vspace*{200mm}\\
+%\includegraphics[height=32mm]{Pictures/logo_uerj_PB.png}
+%\includegraphics[height=24mm]{Pictures/logo_ppg-em.png}
+\vfill
+
+\newpage
+\vspace*{\fill}
+\thispagestyle{empty}
+
+\newpage
+\thispagestyle{empty}
+\vspace*{45mm}
+\begin{center}
+	\includegraphics[height=36mm]{Pictures/logo_uerj_PB.png}\\[20mm]
+	{\Huge\bfseries\sffamily SEMINÁRIOS PPG-EM / UERJ 2015\\[15pt]
+	\huge PPG-EM UERJ 2015 SEMINARS\\[20pt]
+	\Large Programa de Pós-graduação em Engenharia Mecânica UERJ
+	}
+\end{center}
+
+%{\begin{tikzpicture}%[remember picture,overlay]
+%	\node[anchor=north west,inner sep=0pt] at (0,0) %{\includegraphics[scale=.5,angle=-90,origin=c]{leafs_02}}; % Background image
+%	\draw[anchor=north] (midpoint) node [fill=ocre!30!white,fill opacity=0.6,text opacity=1,inner sep=1cm]
+%	{\Huge\centering\bfseries\sffamily\parbox[c][][t]{\paperwidth}{\centering SEMINÁRIOS PPG-EM / UERJ 2015\\[15pt] % Book title
+%	{\huge PPG-EM UERJ 2015 SEMINARS}\\[20pt] % Subtitle
+%	{\Large Programa de Pós-graduação em Engenharia Mecânica UERJ}
+%	}}; % Author name
+%\end{tikzpicture}};
+\vspace*{\fill}
+
+\endgroup
+
+%----------------------------------------------------------------------------------------
+%	COPYRIGHT PAGE
+%----------------------------------------------------------------------------------------
+
+\newpage
+~\vfill
+\thispagestyle{empty}
+
+\noindent
+\includegraphics[height=24mm]{Pictures/logo_uerj_PB.png}
+\hspace{2cm}
+\includegraphics[height=18mm]{Pictures/logo_ppg-em.jpg}\\
+
+%\noindent Copyright \copyright\ 2013 John Smith\\ % Copyright notice
+
+%\noindent \textsc{Published by Publisher}\\ % Publisher
+
+\noindent \textsc{www.ppg-em.eng.uerj.br}\\ % URL
+%\noindent \textsc{www.gesar.uerj.br}\\ % URL
+
+\noindent Editado por Leon Lima (matosleon@gmail.com) e Gustavo Anjos
+(gustavo.anjos@uerj.br). Impressão: DGRAFI - Divisão de Serviços
+Gráficos UERJ. Reprodução é permitida sem restrições. O {\it layout} foi
+criado a partir do modelo {\LaTeX} ``The Legrand Orange Book'', versão
+2.1 (14/11/2015), sob a licença Creative Commons:
+
+CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)\\ %
+License information
+
+\noindent Edited by Leon Lima (matosleon@gmail.com) and Gustavo Anjos
+(gustavo.anjos@uerj.br). Printing service: DGRAFI - Divisão de Serviços
+Gráficos UERJ. There are no restrictions for reproducing this material.
+The layout was created from the {\LaTeX} template ``The Legrand Orange
+Book'', version 2.1 (14/11/15), under the Creative Commons license: 
+
+CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)\\ %
+License information\\ % License information
+
+\noindent \textit{\today} % Printing/edition date
+
+%----------------------------------------------------------------------------------------
+%	TABLE OF CONTENTS
+%----------------------------------------------------------------------------------------
+
+%\chapterimage{chapter_head_1.pdf} % Table of contents heading image
+%
+%\pagestyle{empty} % No headers
+%
+%\tableofcontents % Print the table of contents itself
+%
+%\cleardoublepage % Forces the first chapter to start on an odd page so it's on the right
+%
+%\pagestyle{fancy} % Print headers again
+
+%----------------------------------------------------------------------------------------
+%	PART
+%----------------------------------------------------------------------------------------
+\part{Conteúdo / Contents}
+%----------------------------------------------------------------------------------------
+%	CHAPTER 1
+%----------------------------------------------------------------------------------------
+\chapterimage{leafs_01.jpg} % Chapter heading image
+
+\chapter{Introdução / Introduction}
+
+%\section{Paragraphs of Text}\index{Paragraphs of Text}
+
+%\lipsum[1-3] % Dummy text
+
+\vspace*{-28mm}
+\hspace*{-12mm}
+\begin{minipage}[t]{.55\textwidth}
+	Este material é uma compilação dos trabalhos apresentados no âmbito dos Seminários do PPG-EM em 2015. Foram 17 trabalhos apresentados em 11 dias de seminário. A temporada 2015 de seminários foi inaugurada com uma análise, feita pelo Prof. Norberto Mangiavacchi, da obra de Gaudí sob o ponto de vista da mecânica dos fluidos. 
+	
+	Dos 17 trabalhos, cinco são da comunidade científica externa, o que contribuiu para o estreitamento de parcerias e expansão do campo de discussões técnicas do programa. Cabe também ressaltar a valiosa contribuição dos dois trabalhos de pesquisadores do Instituto de Matemática e Estatística da UERJ.
+	
+	Esta compilação contém o resumo de cada um dos 17 trabalhos, dos quais \numpaperspt são apresentados em texto de duas páginas (artigos compactos). 
+	
+	O idioma selecionado para os textos técnicos foi o inglês devido ao caráter internacional desta publicação e a amplitude de divulgação do mesmo. Mais do que isso, acreditamos que a interação com grupos de pesquisas alinhados ao PPG-EM, tanto brasileiros quanto internacionais, é pré-requisito para alcançarmos o nível de excelência que perseguimos, tendo o idioma inglês como ferramenta para este objetivo. 
+	
+	O PPG-EM deseja intensificar interação com pesquisadores da UERJ e de outras universidades e institutos, com o objetivo final de gerar conhecimento e contribuir para o desenvolvimento científico e tecnológico brasileiro e melhorar a qualidade de vida de nossa sociedade. Acreditamos que este deve ser sempre o principal desejo de todo pesquisador: fazer ciência para que pessoas vivam melhor.
+	
+	\vspace*{10mm}
+	\begin{center}
+		\textbf{-------------------------------------------------\\
+				Prof. Manoel Antônio F. C. Filho\\
+				(Coordenador do PPG-EM)}
+	\end{center}
+	
+\end{minipage}
+\hspace*{8mm}
+\begin{minipage}[t]{.55\textwidth}
+	This material is a compilation of the works presented at the PPG-EM Seminar in 2015 season. Seventeen works were presented in 11 seminar sessions. The 2015 season was opened with an analysis made by Prof. Norberto Mangiavacchi of Gaudí’s legacy, through the lens of fluid mechanics.
+	
+	Among the 17 works presented, five came from outside UERJ, which contributed to the strengthening of partnerships and expansion of technical discussions. It is worth to mention the valuable contribution of two work from the Institute of Mathematics and Statistics of UERJ.
+	
+	This compilation contains the abstract of each of the 17 works, from which \numpapersen are also presented in two pages texts (short papers).
+	
+	The english language was selected for the technical texts due to the international nature of such a publication and its amplitude of disclosure. More than that, we believe that the interaction between international research groups and PPG- EM is a prerequisite to reach such a level of excellence that we pursue, having the english language as a tool for achieving such a goal. 
+	
+	PPG-EM seeks to increase interaction with researcher from UERJ and other universities and institutes, aiming at generating knowledge and contributing for technical and scientific development in Brazil, to improve life quality of our society. We believe that this should always be the main desire of every researcher: to make science so that people can live better.\\
+	
+\vspace*{19.5mm}
+\begin{center}
+	\textbf{-------------------------------------------------\\
+		Prof. José Brant de Campos\\
+		(Vice-coordenador do PPG-EM)}
+\end{center}
+\end{minipage}\\
+
+%\vspace*{-8mm}
+%%\flushright
+%\textbf{Prof. Manoel Antonio Costa\\
+%Prof. José Brant}
+%%\flushleft
+
+\chapter{Resumos / Abstracts}
+
+Neste capítulo são apresentados os resumos dos 17 trabalhos científicos
+que fizeram parte dos Seminários do PPG-EM em 2015. Os resumos estão
+organizados segundo a data de apresentação.\\
+
+This chapter presents the abstracts of the 17 scientific works that
+participated in the PPG-EM Seminars in 2015. Abstracts are organized
+according to the date of presentation.\\
+
+\input{abstracts/norbertoMangiavacchi}
+\input{abstracts/rachelLucena}
+\input{abstracts/leonMatos}
+\input{abstracts/calilMeletti}
+\input{abstracts/eduardoVitral}
+\input{abstracts/cristianeFaria}
+\input{abstracts/patriciaGomes}
+\input{abstracts/americoCunha}
+\input{abstracts/alcestesOliveira}
+\input{abstracts/danielChalhub}
+\input{abstracts/erikGros}
+\input{abstracts/robsonNazareth}
+\input{abstracts/rauniCoelho}
+\input{abstracts/vinicioCoelho}
+\input{abstracts/fabioSantos}
+\input{abstracts/philippeBussetta}
+\input{abstracts/jorgePeixinho}
+
+
+%------------------------------------------------
+
+\chapter{Artigos compactos / Short papers}
+
+\hspace{-8mm}
+\Numpaperspt dos 17 trabalhos são apresentados em artigos compactos, que podem ser lidos neste capítulo.\\
+
+\hspace{-8mm}
+\Numpapersen of the 17 works are presented as short papers, which can be read in this chapter.\\
+
+\hspace{-8mm}
+\textbf{LISTA DE ARTIGOS COMPACTOS / LIST OF COMPACT PAPERS:}\\
+
+\hspace{-8mm}
+\begin{tabular}{lc}
+	Gaudí, the forms that express genius & 18\\
+	Linear stability analysis of fingering in convective dissolution in porous media & 20\\
+	Passive Cooling Systems & 22\\
+	1D modeling of particle transport in turbulent channel flow & 24\\
+	Nano-patterning of surfaces by ion sputtering - numerical study of the Kuramoto-Sivashinsky equation & 26\\
+	Stabilized hybridized Finite Element formulations - a new approach & 28\\
+	Explicit resolution by linear FEM of a system which describes evolutive viscoelastic flows & 30\\
+	Uncertainties in physical systems: why to quantify and how to model? & 32\\
+	Application of Finite Element Method in the study of reactive flows & 34\\
+	Solution of incompressible N-S equations by projection method using Integral Transform Technique & 36\\
+	Numerical modeling of two-phase flows with moving contact lines & 38\\
+	Counter-current Thermocapillary migration of bubbles in microchannels using self-rewetting liquids & 40\\
+	Development of a SAXS equipment for nanomaterials characterization & 42\\
+	Modeling and simulation of polydispersed multiphase flow & 44\\
+\end{tabular}
+
+\index{first work}
+\includepdf[pages={1-28}]{papers_pdf/seminarios_merged.pdf}
+%\includepdf[pages={1-2}]{../papers_pdf/18-19-seminario_norberto.pdf}
+%\includepdf[pages={1-2}]{../papers_pdf/20-21-seminario_rachel.pdf}
+%\includepdf[pages={1-2}]{../papers_pdf/22-23-seminario_leon.pdf}
+%\includepdf[pages={1-2}]{../papers_pdf/24-25-seminario_apoena_gabriel.pdf}
+%\includepdf[pages={1-2}]{../papers_pdf/26-27-seminario_eduardo.pdf}
+%\includepdf[pages={1-2}]{../papers_pdf/28-29-seminario_cristiane.pdf}
+%\includepdf[pages={1-2}]{../papers_pdf/30-31-seminario_patricia.pdf}
+%\includepdf[pages={1-2}]{../papers_pdf/32-33-seminario_americo.pdf}
+%\includepdf[pages={1-2}]{../papers_pdf/34-35-seminario_alcestes.pdf}
+%\includepdf[pages={1-2}]{../papers_pdf/36-37-seminario_daniel.pdf}
+%\includepdf[pages={1-2}]{../papers_pdf/38-39-seminario_erik.pdf}
+%\includepdf[pages={1-2}]{../papers_pdf/40-41-seminario_robson.pdf}
+%\includepdf[pages={1-2}]{../papers_pdf/42-43-seminario_rauni.pdf}
+%\includepdf[pages={1-2}]{../papers_pdf/44-45-seminario_fabio.pdf}
+
+
+\newpage
+\vspace*{\fill}
+\thispagestyle{empty}
+
+\newpage
+\vspace*{\fill}
+\thispagestyle{empty}
+
+\newpage
+\begingroup
+\thispagestyle{empty}
+\begin{tikzpicture}[remember picture,overlay]
+\coordinate [below=12cm] (midpoint) at (current page.north);
+\node at (current page.north west)
+{\begin{tikzpicture}[remember picture,overlay]
+	%\node[anchor=north west,inner sep=0pt] at (0,0) {\includegraphics[scale=.5,angle=-90,origin=c]{leafs_02}}; % Background image
+	\node[anchor=north west,inner sep=0pt] at (0,0) {\includegraphics{leafs_04}}; % Background image
+%	\draw[anchor=north] (midpoint) node [fill=ocre!30!white,fill opacity=0.6,text opacity=1,inner sep=1cm]{\Huge\centering\bfseries\sffamily\parbox[c][][t]{\paperwidth}{\centering SEMINÁRIOS PPG-EM / UERJ 2015\\[15pt] % Book title
+%			{\huge PPG-EM UERJ 2015 SEMINARS}\\[20pt] % Subtitle
+%			{\Large Programa de Pós-graduação em Engenharia Mecânica UERJ}
+%		}}; % Author name
+		\end{tikzpicture}};
+\end{tikzpicture}
+\vfill
+\endgroup
+
+\end{document}

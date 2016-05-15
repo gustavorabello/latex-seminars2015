@@ -1,0 +1,9 @@
+
+\section{Stabilized hybridized Finite Element formulations - a new approach}
+
+\textbf{Cristiane Faria}\\
+\texttt{\small{cofaria@ime.uerj.br}}\\
+IME / UERJ
+
+In linear elasticity problems by using of usual displacement-based finite element methods, we are able to numerically determine the displacement field directly and the stresses are evaluated by post-processing. It is well known that standard Galerkin finite element approximations degrade when the Poisson's ratio tends to 1/2, corresponding to near incompressible elasticity. Hybrid methods are characterized by weakly imposing continuity on each edge of the elements through the Lagrange multipliers. In contrast to DG methods, hybrid formulation allows an element-wise assembly process and the elimination of most degrees of freedom at the element level resulting a global system involving only the degrees-of-freedom of the Lagrange multiplier. Typical strategies are based on the addition of stabilization and symmetrization terms are added to generate a stable and adjoint consistent formulation allowing greater flexibility in the choice of basis functions of approximation spaces for the displacement field and the Lagrange multiplier. After this step, stress approximations with observed optimal rates of convergence are recovered by a local post-processing of both displacement and stress using the multiplier approximation and residual forms of the constitutive and equilibrium equations at the element level.
+
